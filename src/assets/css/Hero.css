@@ -8,15 +8,15 @@
   }
 
   .hero-hello {
-    @apply text-dPurple my-4 text-lg;
+    @apply text-DPurple my-4 text-lg;
   }
 
   .hero-name {
-    @apply text-7xl font-bold text-mPurple leading-tight;
+    @apply text-7xl font-bold text-dPurple leading-tight;
   }
 
   .hero-subtitle {
-    @apply text-7xl font-bold text-dGray leading-tight;
+    @apply text-7xl font-bold text-mPurple leading-tight;
   }
 
   .hero-description {

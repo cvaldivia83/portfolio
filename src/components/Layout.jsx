@@ -1,13 +1,13 @@
 import LeftSideBar from "./LeftSideBar";
 import RightSideBar from "./RightSideBar";
-import Main from "./Main";
+import Hero from "./Hero";
 
 export default function Layout() {
   return (
     <div className="layout">
       <LeftSideBar />
 
-      <Main />
+      <Hero />
       <RightSideBar />
     </div>
   );

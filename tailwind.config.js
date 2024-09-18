@@ -13,8 +13,9 @@ export default {
       colors: {
         background: '#FFF',
         lPurple: '#D9CCFE',
-        mPurple: '#BCA6FE',
+        mPurple: '#AA8EFE',
         dPurple: '#835AFD',
+        DPurple: '#452F85',
         lGray: '#EEEDF1',
         mGray: '#C5C2D0',
         dGray: '#6E6A78', 

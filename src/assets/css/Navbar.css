@@ -10,7 +10,7 @@
 }
 
 .mobileButton {
-  background: theme('colors.dGray');
+  background: theme('colors.lGray');
   border-radius: 0.2rem;
   height: 40px;
   width: 40px;
@@ -29,8 +29,8 @@
   width: 1.2rem;
   height: 2px;
   border-radius: 2px;
-  background: theme('colors.lPurple');
-  box-shadow: 0 6px theme('colors.lPurple'), 0 -6px theme('colors.lPurple');
+  background: theme('colors.dPurple');
+  box-shadow: 0 6px theme('colors.dPurple'), 0 -6px theme('colors.dPurple');
 }
 
 .mobileButton:focus, 
