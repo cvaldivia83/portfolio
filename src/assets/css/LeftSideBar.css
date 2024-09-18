@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* layout */
+
+  .layout {
+    @apply h-screen grid grid-cols-[100px_minmax(1000px,_100%)_100px] text-gray-400 w-screen;
+  }
+
+  /* left sidebar */
+
+  .left_sidebar {
+    @apply flex flex-col items-center justify-end after:content-[''] after:w-px after:bg-gray-400 after:h-20 mx-auto;
+  }
+
+  .left_sidebar > a {
+    @apply p-4 text-2xl hover:-translate-y-1 text-lGray hover:text-lPurple transition ease-in-out;
+  }
+}

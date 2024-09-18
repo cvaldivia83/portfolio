@@ -1,0 +1,19 @@
+.sidebar_email {
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .right_sidebar {
+    @apply flex flex-col items-center justify-end after:content-[''] after:w-px after:bg-gray-400 after:h-20 mx-auto;
+  }
+
+  .sidebar_email {
+    @apply tracking-widest text-lGray pe-6 hover:text-lPurple hover:-translate-y-1 transition ease-in-out;
+  }
+}

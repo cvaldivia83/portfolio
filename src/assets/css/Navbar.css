@@ -1,0 +1,70 @@
+.navbar-list {
+  counter-reset: item;
+}
+
+.navbar-item::before {
+  counter-increment: item;
+  content: "0" counter(item) ".";
+  margin-right: 4px;
+  color: theme('colors.lPurple');
+}
+
+.mobileButton {
+  background: theme('colors.dGray');
+  border-radius: 0.2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.mobileButton::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 2px;
+  border-radius: 2px;
+  background: theme('colors.lPurple');
+  box-shadow: 0 6px theme('colors.lPurple'), 0 -6px theme('colors.lPurple');
+}
+
+.mobileButton:focus, 
+.mobileButton:hover {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 theme('colors.lPurple');
+  border-color: theme('colors.lPurple');
+}
+
+/* 0818 Mobile Menu - Min: 10:32 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply text-lGray font-sans text-sm flex justify-between items-center px-10 py-6;
+  }
+
+  .navbar-list {
+    @apply list-none;
+  }
+
+  .navbar-item {
+    @apply inline-block mx-4 hover:text-lPurple;
+  }
+
+  .navbar-logo {
+    @apply text-lPurple text-base;
+  }
+
+  .resume-btn {
+    @apply text-lPurple px-4 py-2 border-2 border-lPurple rounded inline-block mx-4;
+  }
+}

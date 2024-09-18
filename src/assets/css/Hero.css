@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero {
+    @apply w-3/4 mt-16 ml-28;
+  }
+
+  .hero-hello {
+    @apply text-lPurple my-4;
+  }
+
+  .hero-name {
+    @apply text-7xl font-bold text-lGray leading-tight;
+  }
+
+  .hero-subtitle {
+    @apply text-7xl font-bold text-mGray leading-tight;
+  }
+
+  .hero-description {
+    @apply text-mGray text-lg my-6 leading-8;
+  }
+}
