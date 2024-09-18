@@ -10,10 +10,10 @@
 
 @layer components {
   .right_sidebar {
-    @apply flex flex-col items-center justify-end after:content-[''] after:w-px after:bg-gray-400 after:h-20 mx-auto;
+    @apply flex flex-col items-center justify-end after:content-[''] after:w-px after:bg-dGray after:h-20 mx-auto hover:after:bg-dPurple;
   }
 
   .sidebar_email {
-    @apply tracking-widest text-lGray pe-6 hover:text-lPurple hover:-translate-y-1 transition ease-in-out;
+    @apply tracking-widest text-dGray pe-6 hover:text-dPurple hover:-translate-y-1 transition ease-in-out;
   }
 }
