@@ -4,7 +4,7 @@
 
 @layer components {
   .hero {
-    @apply w-3/4 mt-16 ml-28;
+    @apply md:w-3/4 mt-24 md:ml-28 w-10/12 mx-auto;
   }
 
   .hero-hello {
@@ -12,14 +12,14 @@
   }
 
   .hero-name {
-    @apply text-7xl font-bold text-dPurple leading-tight;
+    @apply md:text-7xl text-5xl font-bold text-dPurple leading-tight;
   }
 
   .hero-subtitle {
-    @apply text-7xl font-bold text-mPurple leading-tight;
+    @apply md:text-7xl text-3xl font-bold text-mPurple leading-tight;
   }
 
   .hero-description {
-    @apply text-DGray text-lg my-6 leading-8;
+    @apply text-DGray md:text-lg text-base my-6 leading-8;
   }
 }

@@ -1,14 +1,17 @@
 import LeftSideBar from "./LeftSideBar";
 import RightSideBar from "./RightSideBar";
 import Hero from "./Hero";
+import useMedia from '../hooks/useMedia';
 
 export default function Layout() {
+  const mobile = useMedia('(max-width: 40rem)');
+
   return (
     <div className="layout">
-      {/* <LeftSideBar />
+     { !mobile &&  <LeftSideBar /> }
 
       <Hero />
-      <RightSideBar /> */}
+      { !mobile && <RightSideBar />}
     </div>
   );
 }

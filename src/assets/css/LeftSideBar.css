@@ -6,7 +6,7 @@
   /* layout */
 
   .layout {
-    @apply h-screen grid grid-cols-[100px_minmax(1000px,_100%)_100px] w-screen;
+    @apply md:grid md:grid-cols-[100px_minmax(1000px,_100%)_100px] w-screen;
   }
 
   /* left sidebar */
