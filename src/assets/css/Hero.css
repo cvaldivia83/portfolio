@@ -4,7 +4,7 @@
 
 @layer components {
   .hero {
-    @apply md:w-3/4 mt-24 md:ml-28 w-10/12 mx-auto;
+    @apply md:w-3/4 md:mt-16 mt-24 md:ml-28 w-10/12 mx-auto;
   }
 
   .hero-hello {

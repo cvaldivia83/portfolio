@@ -7,7 +7,7 @@ export default function Layout() {
   const mobile = useMedia('(max-width: 40rem)');
 
   return (
-    <div className="layout">
+    <div className="min-h-screen">
      { !mobile &&  <LeftSideBar /> }
 
       <Hero />

@@ -1,6 +1,6 @@
 export default function LeftSideBar() {
   return (
-    <div className="left_sidebar">
+    <div className="left_sidebar fixed bottom-0 left-0 h-20 w-32">
       <a href="https://github.com/cvaldivia83" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-github"></i>
       </a>
