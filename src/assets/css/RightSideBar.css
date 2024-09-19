@@ -10,7 +10,7 @@
 
 @layer components {
   .right_sidebar {
-    @apply flex flex-col items-center justify-end after:content-[''] after:w-px after:bg-dGray after:h-24 mx-auto hover:after:bg-dPurple;
+    @apply flex flex-col items-center justify-end after:content-[''] after:w-px after:bg-dGray after:h-24 mx-auto hover:after:bg-dPurple fixed bottom-0 right-0 h-16 w-32;
   }
 
   .sidebar_email {

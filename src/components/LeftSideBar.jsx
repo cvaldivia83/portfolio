@@ -1,6 +1,6 @@
 export default function LeftSideBar() {
   return (
-    <div className="left_sidebar fixed bottom-0 left-0 h-20 w-32">
+    <div className="left_sidebar">
       <a href="https://github.com/cvaldivia83" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-github"></i>
       </a>
@@ -13,7 +13,7 @@ export default function LeftSideBar() {
         <i className="fa-brands fa-linkedin"></i>
       </a>
 
-      <a href="https://wa.me/5521974816078" target="_blank" rel="noreferrer">
+      <a href="https://wa.me/5521974816078" target="_blank" rel="noreferrer" class="left-tiree">
         <i className="fa-brands fa-whatsapp"></i>
       </a>
     </div>
