@@ -5,10 +5,10 @@ import Hero from "./Hero";
 export default function Layout() {
   return (
     <div className="layout">
-      <LeftSideBar />
+      {/* <LeftSideBar />
 
       <Hero />
-      <RightSideBar />
+      <RightSideBar /> */}
     </div>
   );
 }

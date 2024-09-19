@@ -21,6 +21,10 @@
   transition: 0.1s;
   cursor: pointer;
   padding: 0px;
+
+  position: absolute;
+  top: 8%;
+  right: 4%;
 }
 
 .mobileButton::after {
@@ -31,14 +35,56 @@
   border-radius: 2px;
   background: theme('colors.dPurple');
   box-shadow: 0 6px theme('colors.dPurple'), 0 -6px theme('colors.dPurple');
+  transition: 0.2s;
 }
 
 .mobileButton:focus, 
-.mobileButton:hover {
+.mobileButton:hover, 
+.mobileButtonActive {
   outline: none;
   background: white;
-  box-shadow: 0 0 0 theme('colors.lPurple');
-  border-color: theme('colors.lPurple');
+  box-shadow: 0 0 0 3px theme('colors.lPurple');
+  border-color: theme('colors.mPurple');
+  color: theme('colors.mPurple');
+}
+
+.mobileButtonActive::after {
+  transform: rotate(-90deg);
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 8px theme('colors.dPurple'), 0 -8px theme('colors.dPurple');
+}
+
+.navMobile {
+  display: block;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  padding: 0 1rem;
+  background-color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .2rem;
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.navMobileActive {
+  transition: .3s;
+  transform: initial;
+  opacity: 1;
+  z-index: 100;
+}
+
+.navMobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: none;
+  width: 100%;
+  border: none;
+  border-bottom: 0 1px solid #eee;
+  padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 /* 0818 Mobile Menu - Min: 10:32 */
@@ -49,7 +95,7 @@
 
 @layer components {
   .navbar {
-    @apply text-dGray font-sans text-sm flex justify-between items-center px-10 py-6;
+    @apply text-dGray font-sans text-sm flex justify-between items-center px-4 py-6;
   }
 
   .navbar-list {
@@ -57,7 +103,7 @@
   }
 
   .navbar-item {
-    @apply inline-block mx-4 hover:text-dGray hover:font-semibold transition-all ;
+    @apply inline-block mx-4 hover:text-dGray hover:font-semibold transition-all py-2 ;
   }
 
   .navbar-logo {
