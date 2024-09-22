@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-title {
+    @apply text-dGray text-3xl font-bold;
+  }
+
+  .section-01 {
+    @apply before:content-['01.'] before:mr-6 before:text-dPurple;
+  }
+
+  .section-02 {
+    @apply before:content-['02.'] before:mr-6 before:text-dPurple;
+  }
+
+  .section-03 {
+    @apply before:content-['03.'] before:mr-6 before:text-dPurple;
+  }
+}

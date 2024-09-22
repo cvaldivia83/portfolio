@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .about {
+    @apply my-16 pb-16;
+  }
+
+  .about-paragraph {
+    @apply text-DGray md:text-lg text-base my-12 leading-8;
+  }
+
+  .about-icon {
+    @apply text-dPurple mr-2
+  }
+
+  .about-item {
+    @apply text-DGray p-2 text-sm;
+  }
+}

@@ -13,7 +13,7 @@ export default function LeftSideBar() {
         <i className="fa-brands fa-linkedin"></i>
       </a>
 
-      <a href="https://wa.me/5521974816078" target="_blank" rel="noreferrer" class="left-tiree">
+      <a href="https://wa.me/5521974816078" target="_blank" rel="noreferrer" className="left-tiree">
         <i className="fa-brands fa-whatsapp"></i>
       </a>
     </div>

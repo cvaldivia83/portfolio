@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .work {
+    @apply md:ml-16;
+  }
+
+  .work-btn {
+    @apply p-4 text-dPurple font-semibold border-l-4;
+  }
+
+  .jobs {
+    @apply flex items-center mt-12 ml-2;
+  }
+
+  .jobs-tab {
+    @apply flex md:flex-col md:items-start;
+  }
+
+  .jobs-description {
+    @apply p-2;
+  }
+}

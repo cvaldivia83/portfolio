@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="hero flex-1 h-screen overflow-y-auto">
+    <div className="hero">
       <p className="hero-hello">Hi, my name is</p>
       <h1 className="hero-name">Carla Valdivia</h1>
       <h2 className="hero-subtitle">I build things for the web.</h2>
