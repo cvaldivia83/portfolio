@@ -1,12 +1,13 @@
 import SectionTitle from "./SectionTitle"
 import React from 'react';
 import data from '../assets/jobs.json'
+import WorkTitle from "./WorkTitle";
 
 export default function WorkExperience() {
   const [ work, setWork ] = React.useState("le_wagon");
 
   return (
-    <div className="work" id="work">
+    <div className="work" id="experience">
       <SectionTitle title="Where I've worked" order="section-02" />
 
       <div className="jobs">
@@ -33,16 +34,24 @@ export default function WorkExperience() {
         
 
           <div className="job-description">
-          {
-            data[work].map((job) => {
-              return (
-              <p key={job.id} className="job-paragraph">
-                <span className="jobs-icon"><i className="fa-solid fa-caret-right"></i></span>
-                {job.item}
-              </p>
-              )
-            })
-          }
+
+            <WorkTitle 
+              position={data[work].position} 
+              company={data[work].company}
+              start_date={data[work].start_date}
+              end_date={data[work].end_date} 
+            />
+
+            {
+              data[work].description.map((job) => {
+                return (
+                <p key={job.id} className="job-paragraph">
+                  <span className="jobs-icon"><i className="fa-solid fa-caret-right"></i></span>
+                  {job.item}
+                </p>
+                )
+              })
+            }
        
           </div>
 

@@ -1,90 +1,118 @@
 {
-  "le_wagon": [
-    {
-      "id": "le_wagon-01",
-      "item": "Successfully delivered and led 20 web development batches and achieved 97% positive reviews from recently graduated students."
-    },
-    {
-      "id": "le_wagon-02",
-      "item": "Plan and deliver daily lectures covering various topics in web development, such as programming basics, regex, parsing, object-oriented programming, relational databases, SQL, HTML, CSS, Bootstrap, Javascript, Ruby on Rails, Ajax, etc."
-    },
-    {
-      "id": "le_wagon-03",
-      "item": "Conduct code reviews to assess student progress and provide constructive feedback."
-    },
-    {
-      "id": "le_wagon-04",
-      "item": "Project management for the final web development coding projects developed by students. As a lead teacher, my responsibility was to offer guidance and advice on data modeling, front-end development, minimum viable product prototyping, and agile methodology techniques to improve the workflow and performance of our student teams."
-    },
-    {
-      "id": "le_wagon-05",
-      "item": "Collaborate with other instructors and staff to ensure a cohesive and effective learning environment for all students."
-    }  
-  ],
-  "smartia": [
-    {
-      "id": "smartia-01",
-      "item": "Affiliate prospection, recruiting, and onboarding: 20% increase of new affiliate partners in my portfolio."
-    },
-    {
-      "id": "smartia-02",
-      "item": "Recruit and onboard new affiliates. Develop and maintain strong relationships with existing affiliates to maximize campaign performance."
-    },
-    {
-      "id": "smartia-03",
-      "item": "Develop, implement, and track local marketing campaigns and KPIs to maximize ROI. Create and execute strategies to enhance affiliate marketing and boost revenue."
-    },
-    {
-      "id": "smartia-04",
-      "item": "Analyze affiliate performance metrics and track KPIs to evaluate the effectiveness and identify areas for improvement."
-    },
-    {
-      "id": "smartia-05",
-      "item": "Generate monthly reports to affiliates stating their monthly earnings through our affiliate program. Review lead generation provided by affiliates, excluding any potentially invalid data."
-    }
-  ], 
-  "y-box": [
-    {
-      "id": "y-box-01",
-      "item": "Plan and purchase ad space across media channels such as Google Ads and Facebook Ads. Analyze performance metrics, conversion rates, and return on investment (ROI) to assess the effectiveness of campaigns. Monitor and manage advertising budgets to optimize costs and continuously improve campaign performance and strategies."
-    },
-    {
-      "id": "y-box-02",
-      "item": "Email marketing management: set up a strategy to effectively engage with my product's audience through informative newsletters and promotional emails showcasing special offers."
-    },
-    {
-      "id": "y-box-03",
-      "item": "Web content monetization: set up and manage an advertising plan in partnership with local performance marketing platforms directed toward a Brazilian audience."
-    },
-    {
-      "id": "y-box-04",
-      "item": "I was able to achieve significant results, such as a 30% increase in community member acquisition and a 15% increase in revenue growth, reaching as high as R$55.000 per month."
-    }
-  ],
-  "deux_trente": [
-    {
-      "id": "deux_trente-01",
-      "item": "During my 6-month internship, I achieved significant results, such as acquiring and retaining over 200k members for mx.testclub.com's community and revenue growth of up to 12,000 € per month."
-    },
-    {
-      "id": "deux_trente-02",
-      "item": "Content management: create and publish content aligned with our community's interests on our blog and advertise new content on our social media channels."
-    },
-    {
-      "id": "deux_trente-03",
-      "item": "Email marketing: set up a strategy to effectively engage with my product's audience through informative newsletters and promotional emails showcasing special offers."
-    },
-    {
-      "id": "deux_trente-04",
-      "item": "Web content monetization: set up and manage an advertising plan in partnership with local performance marketing platforms directed toward a Mexican audience."
-    },
-    {
-      "id": "deux_trente-05",
-      "item": "Plan and purchase ad space across media channels such as Google Ads and Facebook Ads. Analyze performance metrics, conversion rates, and return on investment (ROI)"
-    },
-    {
-      "id": "deux_trente-06",
-      "item": "Set up WordPress for our digital product (mx.testclub.com). Create custom layouts using HTML and CSS and integrate advertising campaigns into our back-end system using PHP."
-    }
-  ]
+  "le_wagon": {
+    "id": "le_wagon",
+    "position": "Web Development Lead Teacher",
+    "company": "Le Wagon",
+    "start_date": "Out 2021",
+    "end_date": "Present",
+    "description": [
+      {
+        "id": "le_wagon-01",
+        "item": "Successfully delivered and led 20 web development batches and achieved 97% positive reviews from recently graduated students." 
+      },
+      {
+        "id": "le_wagon-02",
+        "item": "Plan and deliver daily lectures covering various topics in web development, such as programming basics, regex, parsing, object-oriented programming, relational databases, SQL, HTML, CSS, Bootstrap, Javascript, Ruby on Rails, Ajax, etc."
+      },
+      {
+        "id": "le_wagon-03",
+        "item": "Conduct code reviews to assess student progress and provide constructive feedback."
+      },
+      {
+        "id": "le_wagon-04",
+        "item": "Project management for the final web development coding projects developed by students. As a lead teacher, my responsibility was to offer guidance and advice on data modeling, front-end development, minimum viable product prototyping, and agile methodology techniques to improve the workflow and performance of our student teams."
+      },
+      {
+        "id": "le_wagon-05",
+        "item": "Collaborate with other instructors and staff to ensure a cohesive and effective learning environment for all students."
+      }  
+    ]
+  },
+  "smartia": {
+    "id": "smartia",
+    "position": "Affiliate Manager",
+    "company": "Smartia",
+    "start_date": "Set 2020",
+    "end_date": "Mar 2021",
+    "description": [
+      {
+        "id": "smartia-01",
+        "item": "Affiliate prospection, recruiting, and onboarding: 20% increase of new affiliate partners in my portfolio."
+      },
+      {
+        "id": "smartia-02",
+        "item": "Recruit and onboard new affiliates. Develop and maintain strong relationships with existing affiliates to maximize campaign performance."
+      },
+      {
+        "id": "smartia-03",
+        "item": "Develop, implement, and track local marketing campaigns and KPIs to maximize ROI. Create and execute strategies to enhance affiliate marketing and boost revenue."
+      },
+      {
+        "id": "smartia-04",
+        "item": "Analyze affiliate performance metrics and track KPIs to evaluate the effectiveness and identify areas for improvement."
+      },
+      {
+        "id": "smartia-05",
+        "item": "Generate monthly reports to affiliates stating their monthly earnings through our affiliate program. Review lead generation provided by affiliates, excluding any potentially invalid data."
+      }
+    ]
+  },
+  "y-box": {
+    "id": "y-box",
+    "position": "Digital Product Manager", 
+    "company": "The Y-Box",
+    "start_date": "Mai 2017",
+    "end_date": "Mar 2020",
+    "description": [
+      {
+        "id": "y-box-01",
+        "item": "Plan and purchase ad space across media channels such as Google Ads and Facebook Ads. Analyze performance metrics, conversion rates, and return on investment (ROI) to assess the effectiveness of campaigns. Monitor and manage advertising budgets to optimize costs and continuously improve campaign performance and strategies."
+      },
+      {
+        "id": "y-box-02",
+        "item": "Email marketing management: set up a strategy to effectively engage with my product's audience through informative newsletters and promotional emails showcasing special offers."
+      },
+      {
+        "id": "y-box-03",
+        "item": "Web content monetization: set up and manage an advertising plan in partnership with local performance marketing platforms directed toward a Brazilian audience."
+      },
+      {
+        "id": "y-box-04",
+        "item": "I was able to achieve significant results, such as a 30% increase in community member acquisition and a 15% increase in revenue growth, reaching as high as R$55.000 per month."
+      }
+    ]
+  },
+  "deux_trente": {
+    "id": "deux_trente",
+    "position": "Digital Product Manager Intern",
+    "company": "2-30 Media",
+    "start_date": "Abr 2016",
+    "end_date": "Out 2016",
+    "description": [
+      {
+        "id": "deux_trente-01",
+        "item": "During my 6-month internship, I achieved significant results, such as acquiring and retaining over 200k members for mx.testclub.com's community and revenue growth of up to 12,000 € per month."
+      },
+      {
+        "id": "deux_trente-02",
+        "item": "Content management: create and publish content aligned with our community's interests on our blog and advertise new content on our social media channels."
+      },
+      {
+        "id": "deux_trente-03",
+        "item": "Email marketing: set up a strategy to effectively engage with my product's audience through informative newsletters and promotional emails showcasing special offers."
+      },
+      {
+        "id": "deux_trente-04",
+        "item": "Web content monetization: set up and manage an advertising plan in partnership with local performance marketing platforms directed toward a Mexican audience."
+      },
+      {
+        "id": "deux_trente-05",
+        "item": "Plan and purchase ad space across media channels such as Google Ads and Facebook Ads. Analyze performance metrics, conversion rates, and return on investment (ROI)"
+      },
+      {
+        "id": "deux_trente-06",
+        "item": "Set up WordPress for our digital product (mx.testclub.com). Create custom layouts using HTML and CSS and integrate advertising campaigns into our back-end system using PHP."
+      }
+    ]
+  }
 }

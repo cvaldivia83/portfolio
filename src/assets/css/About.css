@@ -4,7 +4,7 @@
 
 @layer components {
   .about {
-    @apply my-16 pb-16;
+    @apply my-16 pb-16 w-5/6 mx-auto;
   }
 
   .about-paragraph {

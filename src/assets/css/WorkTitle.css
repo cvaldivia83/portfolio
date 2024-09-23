@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .job-dates {
+    @apply text-DPurple text-lg;
+  }
+
+  .job-company {
+    @apply text-dPurple;
+  }
+
+  .job-title {
+    @apply text-2xl text-dGray font-bold mb-2;
+  }
+}
