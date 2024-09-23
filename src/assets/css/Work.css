@@ -8,18 +8,26 @@
   }
 
   .work-btn {
-    @apply p-4 text-dPurple font-semibold border-l-4;
+    @apply p-4 text-dPurple font-semibold min-[780px]:border-l-4 max-[768px]:border-b-4 ease-in-out duration-300;
   }
 
   .jobs {
-    @apply flex items-center mt-12 ml-2;
+    @apply flex min-[780px]:flex-row flex-col ml-2 my-16;
   }
 
   .jobs-tab {
-    @apply flex md:flex-col md:items-start;
+    @apply flex flex-row  min-[780px]:flex-col sm:items-start overflow-auto;
   }
 
-  .jobs-description {
-    @apply p-2;
+  .job-description {
+    @apply md:w-3/4 px-2 pb-2  max-[768px]:mt-8;
+  }
+
+  .jobs-icon {
+    @apply text-dPurple mr-2;
+  }
+
+  .job-paragraph {
+    @apply text-lg text-DGray pb-2 pl-2;
   }
 }
