@@ -6,13 +6,25 @@ import WorkTitle from "./WorkTitle";
 export default function WorkExperience() {
   const [ work, setWork ] = React.useState("le_wagon");
   const [isVisible, setIsVisible] = React.useState(false);
-
+  const workSection = React.useRef();
+  
   React.useEffect(() => {
-    setIsVisible(true)
+    const onScroll = (event) => {
+      const sectionTop = workSection.current.getBoundingClientRect().top
+      if (sectionTop < 220) {
+        setIsVisible(true)
+      }
+    }
+
+    window.addEventListener('scroll', onScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    }
   }, [])
 
   return (
-    <div className={`work ${isVisible && 'visible'}`} id="experience">
+    <div className={`work ${isVisible && 'visible'}`} id="experience" ref={workSection}>
       <SectionTitle title="Where I've worked" order="section-02" />
 
       <div className="jobs">

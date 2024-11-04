@@ -4,8 +4,7 @@
 
 @layer components {
   .hero {
-    @apply md:w-3/4 md:ml-8 md:mt-16 mt-24 pt-12 pb-24 opacity-0 translate-y-5 duration-1000 ease-out;
-   
+    @apply md:w-3/4 md:ml-8 pt-12 pb-24 opacity-0 translate-y-5 duration-1000 ease-out;
   }
 
   .hero.visible {
