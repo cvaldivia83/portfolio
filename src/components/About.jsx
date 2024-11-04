@@ -1,8 +1,16 @@
+import React from 'react';
+
 import SectionTitle from "./SectionTitle"
 
 export default function About() {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsVisible(true);
+  }, [])
+
   return (
-    <div className="about" id="about">
+    <div className={`about ${ isVisible && 'visible'} `} id="about">
 
       <SectionTitle title="About me" order="section-01" />
 
@@ -15,10 +23,14 @@ export default function About() {
       <p className="about-paragraph">Here are a few technologies I’ve been working with recently:</p>
       
       <ul className="about-list">
-        <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>Ruby on Rails</li>
-        <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>Javascript (ES6+)</li>
-        <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>React</li>
-        <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>WordPress</li>
+        <span>
+          <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>Ruby on Rails</li>
+          <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>Javascript (ES6+)</li>
+        </span>
+        <span>
+          <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>React</li>
+          <li className="about-item"><span className="about-icon"><i className="fa-solid fa-star-of-life"></i></span>WordPress</li>
+        </span>
       </ul>
     </div>
   
