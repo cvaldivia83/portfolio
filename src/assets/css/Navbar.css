@@ -87,6 +87,51 @@
   cursor: pointer;
 }
 
+/* make navbar drop down */
+
+.navbar {
+  overflow: hidden;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.navbar.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar-item {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.navbar-item:nth-child(5) {
+  transition-delay: 0.2s;
+}
+
+.navbar-item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.navbar-item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.navbar-item:nth-child(2) {
+  transition-delay: 0.5s;
+}
+
+.navbar-item:nth-child(1) {
+  transition-delay: 0.6s;
+}
+
+.navbar.visible .navbar-item {
+  opacity: 1;
+  transform: translateY(0)
+}
+
 /* 0818 Mobile Menu - Min: 10:32 */
 
 @tailwind base;
