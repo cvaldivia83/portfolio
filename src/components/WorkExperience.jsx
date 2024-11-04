@@ -5,9 +5,14 @@ import WorkTitle from "./WorkTitle";
 
 export default function WorkExperience() {
   const [ work, setWork ] = React.useState("le_wagon");
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsVisible(true)
+  }, [])
 
   return (
-    <div className="work" id="experience">
+    <div className={`work ${isVisible && 'visible'}`} id="experience">
       <SectionTitle title="Where I've worked" order="section-02" />
 
       <div className="jobs">

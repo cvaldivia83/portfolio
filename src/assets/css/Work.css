@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.work {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.work.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @layer components {
 
 
