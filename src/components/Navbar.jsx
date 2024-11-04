@@ -5,6 +5,12 @@ export default function Navbar() {
   const mobile = useMedia('(max-width: 40rem)');
   const [mobileMenu, setMobileMenu] = React.useState(false);
   // check if sandwich menu is open or closed
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsVisible(true);
+  }, [])
+
   
   return (
     <>
@@ -15,7 +21,7 @@ export default function Navbar() {
           <i className="fa-solid fa-code"></i>
       </div>
 
-      <nav className={`${mobile ? 'navMobile' : 'navbar'} ${mobileMenu && 'navMobileActive'}`}>
+      <nav className={`navbar ${isVisible && 'visible'} ${mobile ? 'navMobile' : 'navbar'} ${mobileMenu && 'navMobileActive'}`}>
         <ul className="navbar-list">
           <li className="navbar-item item-counter">
             <a href="#about">About</a>
