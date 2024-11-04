@@ -1,6 +1,14 @@
+import React from 'react';
+
 export default function Hero() {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+    React.useEffect(() => {
+      setIsVisible(true);
+    }, [])
+
   return (
-    <div className="hero">
+    <div className={`hero ${isVisible && 'visible'}`}>
       <p className="hero-hello">Hi, my name is</p>
       <h1 className="hero-name">Carla Valdivia</h1>
       <h2 className="hero-subtitle">I build things for the web.</h2>

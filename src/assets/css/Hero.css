@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.hero.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @layer components {
   .hero {
-    @apply md:w-3/4  md:mt-16 mt-24 pt-12 pb-24;
+    @apply md:w-3/4 md:ml-8 md:mt-16 mt-24 pt-12 pb-24;
   }
 
   .hero-hello {
