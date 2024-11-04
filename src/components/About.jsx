@@ -1,16 +1,14 @@
 import React from 'react';
+import useScroll from '../hooks/useScroll';
 
 import SectionTitle from "./SectionTitle"
 
 export default function About() {
-  const [isVisible, setIsVisible] = React.useState(false);
-
-  React.useEffect(() => {
-    setIsVisible(true);
-  }, [])
+  const aboutSection = React.useRef();
+  const isVisible = useScroll(aboutSection);
 
   return (
-    <div className={`about ${ isVisible && 'visible'} `} id="about">
+    <div className={`about ${ isVisible && 'visible'} `} id="about" ref={aboutSection}>
 
       <SectionTitle title="About me" order="section-01" />
 
