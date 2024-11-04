@@ -2,26 +2,13 @@ import SectionTitle from "./SectionTitle"
 import React from 'react';
 import data from '../assets/jobs.json'
 import WorkTitle from "./WorkTitle";
+import useScroll from "../hooks/useScroll";
 
 export default function WorkExperience() {
   const [ work, setWork ] = React.useState("le_wagon");
-  const [isVisible, setIsVisible] = React.useState(false);
   const workSection = React.useRef();
+  const isVisible = useScroll(workSection);
   
-  React.useEffect(() => {
-    const onScroll = (event) => {
-      const sectionTop = workSection.current.getBoundingClientRect().top
-      if (sectionTop < 220) {
-        setIsVisible(true)
-      }
-    }
-
-    window.addEventListener('scroll', onScroll);
-    
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    }
-  }, [])
 
   return (
     <div className={`work ${isVisible && 'visible'}`} id="experience" ref={workSection}>
