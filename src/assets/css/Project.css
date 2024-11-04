@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .project {
+  .projects {
     @apply md:ml-16 my-16;
   }
 }
