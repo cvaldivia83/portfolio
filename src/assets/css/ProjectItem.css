@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.project-content {
+  grid-column: 7 / -1;
+}
+
+.project .project-content {
+  position: relative;
+  grid-area: 1 /1 / -1 / 7;
+}
+
 @layer components {
   .project {
-    @apply my-16;
+    @apply my-16 relative grid grid-cols-12 gap-2.5 items-center opacity-100;
   }
 
   .project-featured {
