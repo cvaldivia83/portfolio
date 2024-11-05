@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .project {
+    @apply my-16;
+  }
+
+  .project-featured {
+    @apply text-base text-dPurple font-normal;
+  }
+
+  .project-title {
+    @apply text-DGray text-3xl font-bold py-4;
+  }
+
+  .project-description {
+    @apply text-dGray bg-lGray px-10 py-12 leading-7 ;
+  }
+
+  .project-tools {
+    @apply my-2;
+  }
+
+  .project-tool {
+    @apply inline-block mx-4 text-DPurple text-sm;
+  }
+
+  .project-content {
+    @apply text-end rounded;
+  }
+
+  .project-links {
+    @apply mt-6
+  }
+
+  .project-link {
+    @apply mx-2 text-2xl hover:text-dPurple;
+  }
+
+  .project-image {
+    @apply relative before:content-[''] before:block before:absolute before:bg-pLayer before:top-0 before:left-0 before:w-full before:h-full;
+  }
+
+
+}

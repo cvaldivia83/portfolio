@@ -19,7 +19,8 @@ export default {
         lGray: '#EEEDF1',
         mGray: '#C5C2D0',
         dGray: '#6E6A78', 
-        DGray: '#403E46'
+        DGray: '#403E46',
+        pLayer: 'rgba(170, 142, 254, 0.5)'
       },
     },
   },
