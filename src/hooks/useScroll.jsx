@@ -7,7 +7,7 @@ const useScroll = (element) => {
 
     const onScroll = () => {
       const sectionTop = element.current.getBoundingClientRect().top;
-      console.log(sectionTop);
+      
       if (sectionTop < 480) {
         setIsVisible(true)
       }

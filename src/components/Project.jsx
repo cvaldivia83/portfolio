@@ -1,6 +1,8 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
+import ProjectItem from './ProjectItem';
 import useScroll from '../hooks/useScroll';
+import data from '../assets/projects.json';
 
 export default function Project() {
   const projectSection = React.useRef();
@@ -10,9 +12,13 @@ export default function Project() {
     <div className={`projects ${isVisible && 'visible'}`} id="work" ref={projectSection}>
       <SectionTitle title="Some Things I've Build" order="section-03" />
 
-      <div className="project">
-        <img src="https://res.cloudinary.com/rent-an-instrument/image/upload/v1730755071/Screenshot_2024-11-04_at_14.24.40_bozfen.png" alt="" />
-      </div>
+    {
+    data.map((project) => {
+      return <ProjectItem key={project.id} title={project.title} featured={project.featured} image={project.image} alt={project.alt} tools={project.tools} />
+    })
+    }
+
+
     </div>
   )
 }

@@ -29,7 +29,7 @@
   }
 
   .job-description {
-    @apply md:w-3/4 px-2 pb-2  max-[768px]:mt-8 ease-in-out duration-300;
+    @apply md:w-3/4 px-2 pb-2  max-[768px]:mt-8 transition transition-opacity duration-500 ease-in-out;
   }
 
   .jobs-icon {
