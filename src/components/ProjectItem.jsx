@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import useScroll from '../hooks/useScroll';
+import useMedia from '../hooks/useMedia';
 
 
 const ProjectItem = ({title, featured, description, image, alt, tools, github, url}) => {
+  const mobile = useMedia('(max-width: 40rem)');
   const projectItem = React.useRef();
   const isVisible = useScroll(projectItem);
 
   return (
-    <li className={`project ${isVisible && 'visible'}`} ref={projectItem}>
+    <li className={`${ mobile ? 'mobileProject' : 'project'} ${isVisible && 'visible'}`} ref={projectItem}>
       
-      <div className="project-content">
+      <div className={`${ mobile ? 'mobileProject-content' : 'project-content' }`}>
         { featured && <p className="project-featured">Featured Project</p> }
 
         <h3 className="project-title">{title}</h3>
@@ -41,7 +43,7 @@ const ProjectItem = ({title, featured, description, image, alt, tools, github, u
       </div>
 
 
-      <div className="project-image">
+      <div className={`${ mobile ? 'mobileProject-image' : 'project-image' }`}>
         <img src={image} alt={alt} />
       </div>
     </li>
