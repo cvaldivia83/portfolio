@@ -11,6 +11,14 @@ export default function Navbar() {
     setIsVisible(true);
   }, [])
 
+  function handleScroll(e, sectionId) {
+    e.preventDefault();
+    const item = document.getElementById(sectionId);
+    if (item) {
+      item.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   
   return (
     <>
@@ -24,16 +32,16 @@ export default function Navbar() {
       <nav className={`navbar ${isVisible && 'visible'} ${mobile ? 'navMobile' : 'navbar'} ${mobileMenu && 'navMobileActive'}`}>
         <ul className="navbar-list">
           <li className="navbar-item item-counter">
-            <a href="#about">About</a>
+            <a href="#about" onClick={(e) => handleScroll(e, 'about')}>About</a>
           </li>
           <li className="navbar-item item-counter">
-            <a href="#experience">Experience</a>
+            <a href="#experience" onClick={(e) => handleScroll(e, 'experience')}>Experience</a>
           </li>
           <li className="navbar-item item-counter">
-            <a href="#work">Work</a>
+            <a href="#work" onClick={(e) => handleScroll(e, 'work')}>Work</a>
           </li>
           <li className="navbar-item item-counter">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contact</a>
           </li>
           <li className={`${mobile ? "navbar-item item-counter" : "resume-btn"}`}>
             <a href="#resume">Resume</a>
