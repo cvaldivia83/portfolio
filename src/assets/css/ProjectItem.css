@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-content {
+  grid-column: 7 / -1;
+  z-index: 5;
+}
+
+.project .project-content {
+  position: relative;
+  grid-area: 1 /1 / -1 / 7;
+}
+
+.project .project-image {
+  box-shadow: 0 10px 30px -15px rgba(240, 240 240, 0.5);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+}
+
+/* .mobileProject {
+
+} */
+
+.mobileProject .mobileProject-content {
+  position: relative;
+  grid-column: 1 / -1;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.mobileProject .mobileProject-image {
+  box-shadow: 0 10px 30px -15px rgba(240, 240 240, 0.5);
+  grid-area: 1 / -1;
+  position: relative;
+  z-index: 1;
+  opacity: 0.25;
+}
+
+@layer components {
+  .project {
+    @apply my-24 relative grid grid-cols-12 gap-2.5 items-center opacity-100;
+  }
+
+  .project-featured {
+    @apply text-base text-dPurple font-normal;
+  }
+
+  .project-title {
+    @apply text-DGray text-3xl font-bold py-4;
+  }
+
+  .project-description {
+    @apply text-dGray bg-lGray px-10 py-12 leading-7 rounded-sm ;
+  }
+
+  .project-tools {
+    @apply my-2;
+  }
+
+  .project-tool {
+    @apply inline-block mx-4 text-DPurple text-sm;
+  }
+
+  .project-content {
+    @apply text-start rounded;
+  }
+
+  .project-links {
+    @apply mt-6
+  }
+
+  .project-link {
+    @apply mx-2 text-2xl hover:text-dPurple text-dGray;
+  }
+
+  .project-image {
+    @apply relative before:content-[''] before:block before:absolute before:bg-pLayer before:top-0 before:left-0 before:w-full before:h-full before:rounded-sm hover:before:bg-transparent transition-all duration-300;
+  }
+
+
+}
