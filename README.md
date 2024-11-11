@@ -1,8 +1,13 @@
-# React + Vite
+# Carla Valdivia | Web Developer | Portfolio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Carla Valdivia's Portfolio](https://res.cloudinary.com/rent-an-instrument/image/upload/v1731334536/Screenshot_2024-11-11_at_11.15.16_sotr2u.png)
 
-Currently, two official plugins are available:
+Full-stack web developer proficient in HTML, CSS, Ruby, JavaScript, Rails, and React. Skilled in creating responsive and interactive applications with a focus on user-friendly design and efficient back-end functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tools
+
+ - Vite
+ - React
+ - Javascript
+ - CSS
+ - Tailwind
