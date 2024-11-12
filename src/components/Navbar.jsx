@@ -44,7 +44,7 @@ export default function Navbar() {
             <a href="#contact" onClick={(e) => handleScroll(e, 'contact')}>Contact</a>
           </li>
           <li className={`${mobile ? "navbar-item item-counter" : "resume-btn"}`}>
-            <a href="#resume">Resume</a>
+            <a href="../../public/CACV-2024-b.pdf"  target="_blank">Resume</a>
           </li>
         </ul>
       </nav>
