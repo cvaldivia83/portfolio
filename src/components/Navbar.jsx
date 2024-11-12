@@ -7,9 +7,10 @@ export default function Navbar() {
   // check if sandwich menu is open or closed
   const [isVisible, setIsVisible] = React.useState(false);
 
-  React.useEffect(() => {
-    setIsVisible(true);
-  }, [])
+  // React.useEffect(() => {
+  //   setIsVisible(true);
+  // }, [])
+
 
   function handleScroll(e, sectionId) {
     e.preventDefault();
@@ -19,17 +20,33 @@ export default function Navbar() {
     }
   }
 
+  function handleClick() {
+    console.log(mobileMenu);
+    setMobileMenu(!mobileMenu)
+    setIsVisible(!isVisible);
+  }
+
   
   return (
     <>
-
+      
+      { mobile && (
+        <button 
+        onClick={handleClick}
+        aria-label="Menu" 
+        className={`mobileButton ${mobileMenu && "mobileButtonActive"}`}
+        >
+        </button>
+        )
+      }
+      
 
     <div className="flex justify-between items-center pl-8">
       <div className={`${mobile ? "hidden" : "navbar-logo"}`}>
           <i className="fa-solid fa-code"></i>
       </div>
-
-      <nav className={`navbar ${isVisible && 'visible'} ${mobile ? 'navMobile' : 'navbar'} ${mobileMenu && 'navMobileActive'}`}>
+      {/*  */}
+      <nav className={`navbar ${mobile ? 'navMobile' : 'navbar'} ${mobileMenu && 'navMobileActive'} ${isVisible ? 'visible' : ''}`}>
         <ul className="navbar-list">
           <li className="navbar-item item-counter">
             <a href="#about" onClick={(e) => handleScroll(e, 'about')}>About</a>
@@ -49,14 +66,8 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      { mobile && (
-        <button aria-label="Menu" 
-        className={`${"mobileButton"} ${mobileMenu && "mobileButtonActive"}`}
-        onClick={() => setMobileMenu(!mobileMenu)}></button>
-        )
-      }
-    </div>
 
+    </div>
 
 
     </>
