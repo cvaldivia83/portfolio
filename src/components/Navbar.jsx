@@ -7,10 +7,6 @@ export default function Navbar() {
   // check if sandwich menu is open or closed
   const [isVisible, setIsVisible] = React.useState(false);
 
-  // React.useEffect(() => {
-  //   setIsVisible(true);
-  // }, [])
-
 
   function handleScroll(e, sectionId) {
     e.preventDefault();
