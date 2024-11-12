@@ -7,19 +7,7 @@
     "alt": "Petz - Social Media for Pets", 
     "featured": true,
     "github": ["https://github.com/cvaldivia83/rails-petz-api", "https://github.com/cvaldivia83/petz-vite"],
-    "url": "", 
+    "url": "https://www.petz-cv.lat", 
     "tools": ["React", "Tailwind", "Rails", "RESTful API", "Heroku", "Vercel"]
-  }, 
-  {
-    "id": "project-cookbook",
-    "title": "The Cookbook",
-    "description": "A web app for collecting and exploring new recipes. Save, update and delete your personal recipes. Have a taste for something new? Look for new recipes, choose and save the one that suits you best.", 
-    "image": "https://camo.githubusercontent.com/f72085c6e59bf064da9451d428b8069d932839ccc553c3eff5966212162f4e58/68747470733a2f2f696b2e696d6167656b69742e696f2f6b696664346e7a32776f6b742f53637265656e5f53686f745f323032312d30382d30395f61745f31372e33332e32385f426d656b61504835422e706e673f7570646174656441743d31363238353431323435363836", 
-    "alt": "Cookbook - Enjoy recipes", 
-    "featured": false,
-    "github": ["https://github.com/cvaldivia83/cookbook-page"],
-    "url": "",  
-    "tools": ["Ruby", "Sinatra", "Bootstrap", "HTML", "CSS", "Heroku"]
   }
-
 ]
