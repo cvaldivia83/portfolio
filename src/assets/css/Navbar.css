@@ -46,6 +46,7 @@
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
+
 .nav-item:hover {
   color: theme('colors.dGray');
   font-weight: 600;

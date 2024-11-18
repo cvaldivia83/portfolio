@@ -5,6 +5,11 @@ export default function Navbar() {
   const mobile = useMedia('(max-width: 40rem)');
   const [mobileMenu, setMobileMenu] = React.useState(false);
   // check if sandwich menu is open or closed
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsVisible(true);
+  }, [])
 
   function handleClick() {
     setMobileMenu(!mobileMenu);
@@ -36,21 +41,21 @@ export default function Navbar() {
         )
       }
 
-      <nav className={ `${mobile ? 'navMobile' : 'nav'} ${ mobileMenu && 'navMobileActive' } ${!mobile ? 'visible' : ''}`}>
+      <nav className={ `${mobile ? 'navMobile' : 'nav'} ${ mobileMenu && 'navMobileActive' } ${!mobile && isVisible ? 'visible' : ''}`}>
         <ul className="nav-list">
-          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'about')}>
+          <li className={`${mobile && 'opacity-100'} nav-item item-counter`} onClick={(e) => handleScroll(e, 'about')}>
             <a href="#about" className="href">About</a>
           </li>
-          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'experience')}>
+          <li className={`${mobile && 'opacity-100'} nav-item item-counter`} onClick={(e) => handleScroll(e, 'experience')}>
             <a href="#experience">Experience</a>
           </li>
-          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'work')}>
+          <li className={`${mobile && 'opacity-100'} nav-item item-counter`} onClick={(e) => handleScroll(e, 'work')}>
             <a href="#work">Work</a>
           </li>
-          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'contact')}>
+          <li className={`${mobile && 'opacity-100'} nav-item item-counter`} onClick={(e) => handleScroll(e, 'contact')}>
             <a href="#contact">Contact</a>
           </li>
-          <li className={ mobile ? 'nav-item item-counter' : 'resume-btn'}>
+          <li className={ mobile ? 'nav-item item-counter opacity-100' : 'resume-btn'}>
             <a href="/cacv.pdf"  target="_blank">Resume</a>
           </li>
         </ul>
