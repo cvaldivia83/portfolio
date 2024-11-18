@@ -36,7 +36,7 @@ export default function Navbar() {
         )
       }
 
-      <nav className={ `${mobile ? 'navMobile' : 'nav'} ${ mobileMenu && 'navMobileActive' }` }>
+      <nav className={ `${mobile ? 'navMobile' : 'nav'} ${ mobileMenu && 'navMobileActive' } ${!mobile ? 'visible' : ''}`}>
         <ul className="nav-list">
           <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'about')}>
             <a href="#about" className="href">About</a>
