@@ -36,8 +36,9 @@
 }
 
 .nav-item {
-  margin: 0 1rem;
-  padding: 0.5rem 0;
+  width: 100%;
+  /* margin: 0 1rem; */
+  padding: 0.5rem 1.5rem; /* 0 */
   color: theme('colors.DGray');
 }
 

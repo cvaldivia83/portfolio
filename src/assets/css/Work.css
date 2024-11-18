@@ -15,7 +15,9 @@
 
 @layer components {
 
-
+  .work {
+    @apply pt-12;
+  }
   .work-btn {
     @apply p-4 text-dPurple font-semibold min-[780px]:border-l-4 max-[768px]:border-b-4 ease-in-out duration-300;
   }
