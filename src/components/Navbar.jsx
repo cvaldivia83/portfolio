@@ -9,6 +9,16 @@ export default function Navbar() {
   function handleClick() {
     setMobileMenu(!mobileMenu);
   }
+
+  function handleScroll(e, sectionId) {
+    e.preventDefault();
+    const item = document.getElementById(sectionId);
+
+    if (item) {
+      item.scrollIntoView({ behavior: 'smooth' });
+    }
+
+  }
   
   return (
     <div className="nav-container">
@@ -28,16 +38,16 @@ export default function Navbar() {
 
       <nav className={ `${mobile ? 'navMobile' : 'nav'} ${ mobileMenu && 'navMobileActive' }` }>
         <ul className="nav-list">
-          <li className="nav-item item-counter">
+          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'about')}>
             <a href="#about" className="href">About</a>
           </li>
-          <li className="nav-item item-counter">
+          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'experience')}>
             <a href="#experience">Experience</a>
           </li>
-          <li className="nav-item item-counter">
+          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'work')}>
             <a href="#work">Work</a>
           </li>
-          <li className="nav-item item-counter">
+          <li className="nav-item item-counter" onClick={(e) => handleScroll(e, 'contact')}>
             <a href="#contact">Contact</a>
           </li>
           <li className={ mobile ? 'nav-item item-counter' : 'resume-btn'}>

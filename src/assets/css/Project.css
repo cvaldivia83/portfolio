@@ -4,6 +4,6 @@
 
 @layer components {
   .projects {
-    @apply md:ml-16 my-16;
+    @apply md:ml-16 pt-12;
   }
 }
