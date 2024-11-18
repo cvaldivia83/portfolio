@@ -32,6 +32,13 @@ main {
   display: block;
 }
 
+/* prevent horizontal scroll */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.

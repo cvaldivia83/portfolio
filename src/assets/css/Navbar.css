@@ -1,12 +1,68 @@
-.navbar-list {
-  counter-reset: item;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* .nav-container {
+    @apply p-6 flex items-center justify-between
+  }
+
+  .nav-logo {
+    @apply text-dPurple text-base font-bold;
+  } */
 }
 
-.navbar-item::before {
+
+/* Pure CSS */
+
+.nav-container {
+  padding: 1.5rem 3.250rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  color: theme('colors.dPurple');
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.nav-list {
+  counter-reset: item;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  color: theme('colors.DGray');
+}
+
+.nav-item:hover {
+  color: theme('colors.dGray');
+  font-weight: 600;
+}
+
+.nav-item::before {
   counter-increment: item;
-  content: "0" counter(item) ".";
+  content: '0' counter(item) '.';
   margin-right: 4px;
   color: theme('colors.dPurple');
+}
+
+.resume-btn {
+  color: theme('colors.dPurple');
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid theme('colors.dPurple');
+  border-radius: 12px;
+}
+
+.resume-btn:hover {
+  font-weight: 600;
+  border-width: 0.150rem;
 }
 
 .mobileButton {
@@ -20,7 +76,7 @@
   border: 1px solid transparent;
   transition: 0.1s;
   cursor: pointer;
-  padding: 0px;
+  /* padding: 0px; */
   z-index: 1;
   position: absolute;
   top: 8%;
@@ -39,7 +95,7 @@
 }
 
 .mobileButton:focus, 
-.mobileButton:hover, 
+.mobileButton:hover,
 .mobileButtonActive {
   outline: none;
   background: white;
@@ -58,7 +114,7 @@
 .navMobile {
   display: block;
   position: absolute;
-  top: 95px;
+  top: 95px; /* 70px */
   right: 0px;
   padding: 0 1rem;
   background-color: white;
@@ -81,83 +137,51 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: none;
+  background-color: none;
   width: 100%;
   border: none;
-  border-bottom: 0 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 0.5rem 0;
   cursor: pointer;
 }
 
-/* make navbar drop down */
 
-.navbar {
-  overflow: hidden;
-  transform: translateY(-100%);
-  opacity: 0;
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
+/* animation to drop all items from the navbar */
 
-.navbar.visible {
+/* .nav.visible {
   transform: translateY(0);
   opacity: 1;
 }
 
-.navbar-item {
+.nav-item {
   opacity: 0;
   transform: translateY(-20px);
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-}
+} 
 
-.navbar-item:nth-child(5) {
+.nav-item:nth-child(5) {
   transition-delay: 0.2s;
 }
 
-.navbar-item:nth-child(4) {
+.nav-item:nth-child(4) {
   transition-delay: 0.3s;
 }
 
-.navbar-item:nth-child(3) {
+.nav-item:nth-child(3) {
   transition-delay: 0.4s;
 }
 
-.navbar-item:nth-child(2) {
+.nav-item:nth-child(2) {
   transition-delay: 0.5s;
 }
 
-.navbar-item:nth-child(1) {
+.nav-item:nth-child(1) {
   transition-delay: 0.6s;
 }
 
-.navbar.visible .navbar-item {
+.nav.visible .navbar-item {
   opacity: 1;
   transform: translateY(0)
 }
 
-/* 0818 Mobile Menu - Min: 10:32 */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-  .navbar {
-    @apply text-dGray font-sans text-sm flex justify-between items-center px-4 py-6;
-  }
-
-  .navbar-list {
-    @apply list-none;
-  }
-
-  .navbar-item {
-    @apply inline-block mx-4 hover:text-dGray hover:font-semibold transition-all py-2 ;
-  }
-
-  .navbar-logo {
-    @apply text-dPurple text-base font-bold;
-  }
-
-  .resume-btn {
-    @apply text-dPurple px-4 py-2 border-2 border-dPurple rounded inline-block mx-4 hover:font-semibold;
-  }
-}
+*/
