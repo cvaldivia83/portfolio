@@ -1,9 +1,13 @@
-// import React from 'react';
+import React from 'react';
+import useScroll from '../hooks/useScroll';
 
 
 export default function Contact() {
+  const contactSection = React.useRef();
+  const visible = useScroll(contactSection);
+
   return (
-    <div className="contact" id='contact'>
+    <div className={`contact ${visible && 'visible'}`} id='contact' ref={contactSection}>
       <h2 className='contact-title'>What&#39;s Next?</h2>
 
       <h2 className="contact-cto">Get In Touch</h2>
