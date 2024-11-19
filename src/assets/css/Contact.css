@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .contact {
+    @apply pb-20
+  }
+
+  .contact-title {
+    @apply before:content-['04.'] before:mr-3 before:text-dPurple text-center text-lg text-dPurple py-6
+  }
+
+  .contact-cto {
+    @apply md:text-6xl text-5xl font-extrabold text-dGray text-center py-4
+  }
+
+  .contact-invitation {
+    @apply md:w-1/2 w-full mx-auto;
+  }
+
+  .contact-para {
+    @apply text-DGray text-lg my-6 leading-7 text-center;
+  }
+
+  .contact-container {
+    @apply flex items-center justify-center 
+  }
+
+  .contact-box {
+    @apply px-6 py-4 border-2 rounded border-dPurple mx-4 text-dPurple text-xl hover:text-DGray hover:border-DGray transition-all;
+  }
+}

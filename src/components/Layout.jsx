@@ -5,6 +5,7 @@ import About from './About';
 import useMedia from '../hooks/useMedia';
 import WorkExperience from "./WorkExperience";
 import Project from './Project';
+import Contact from "./Contact";
 
 export default function Layout() {
   const mobile = useMedia('(max-width: 40rem)');
@@ -18,6 +19,7 @@ export default function Layout() {
       <About />
       <WorkExperience />
       <Project />
+      <Contact />
      </div>
       { !mobile && <RightSideBar />}
     </div>

@@ -18,4 +18,5 @@
   .section-03 {
     @apply before:content-['03.'] before:mr-6 before:text-dPurple;
   }
+
 }
