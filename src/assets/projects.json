@@ -8,6 +8,6 @@
     "featured": true,
     "github": ["https://github.com/cvaldivia83/rails-petz-api", "https://github.com/cvaldivia83/petz-vite"],
     "url": "https://www.petz-cv.lat", 
-    "tools": ["React", "Tailwind", "Rails", "RESTful API", "Heroku", "Vercel"]
+    "tools": ["React", "Tailwind", "Rails", "Vercel", "Heroku", "RESTful API"]
   }
 ]
