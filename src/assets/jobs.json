@@ -1,4 +1,33 @@
-{
+{ 
+  "policyfly": {
+    "id": "policyfly",
+    "position": "Solutions Engineer Junior",
+    "company": "PolicyFly",
+    "start_date": "Nov 2025",
+    "end_date": "Present",
+    "description": [
+      {
+        "id": "policyfly-01",
+        "item": "Translated product requirements into technical solutions and customized configurations within the Lua client, aligning domain business rules with distinct customer use cases." 
+      },
+      {
+        "id": "policyfly-02",
+        "item": "Built the TypeScript gRPC client to consume strongly typed contracts, integrating remote services and driving reactive UI components in Vue.js."
+      },
+      {
+        "id": "policyfly-03",
+        "item": "Defined and consumed Protocol Buffers (Protobuf) schemas, ensuring high-performance binary serialization and strictly typed contracts between client layers and backend services."
+      },
+      {
+        "id": "policyfly-04",
+        "item": "Executed integration testing, flow validations, and quality assurance checks to ensure business logic reliability and stable releases."
+      },
+      {
+        "id": "policyfly-05",
+        "item": "Collaborated with Product Managers on requirement analysis, functional refinements, and continuous delivery of new features and enhancements."
+      }  
+    ]
+  },
   "le_wagon": {
     "id": "le_wagon",
     "position": "Web Development Lead Teacher",
